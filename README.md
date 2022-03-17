@@ -27,7 +27,7 @@ Router Widget to be used as `iframe` given below -
 
 
 
-Customizable parameter to be attached `url` inside `src` with router widget -
+Customizable parameter to be inserted as `query params` in `url` -
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
