@@ -40,10 +40,10 @@ Optional restriction parameters to be used with the above customizable parameter
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `srcChains` | `string` | ChainId of source chains seperated by comma that only needs to be shown in selection menu. |
-| `dstChains` | `string` | ChainId of destination chains seperated by comma that only needs to be shown in selection menu. |
-| `srcTokens` | `string` | Address of source tokens belonging to list of `srcChains` seperated by comma that only needs to be shown in selection menu.|
-| `dstTokens` | `string` | Address of destination tokens belonging to list of `dstChains` seperated by comma that only needs to be shown in selection menu.|
+| `srcChains` | `string` | List of chainId's of source chains seperated by comma that only needs to be shown in selection menu. |
+| `dstChains` | `string` | List of chainId's of destination chains seperated by comma that only needs to be shown in selection menu. |
+| `srcTokens` | `string` | List of addresses of source tokens belonging to list of `srcChains` seperated by comma that only needs to be shown in selection menu.|
+| `dstTokens` | `string` | List of addresses of destination tokens belonging to list of `dstChains` seperated by comma that only needs to be shown in selection menu.|
 
 Note - 
 1. `height` and `width` are customizable but we recommend to keep the aspect ratio same.
