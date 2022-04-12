@@ -21,8 +21,8 @@ Customizable parameters need to be inserted as `query params` in `url` -
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `isWidget` | `string` | `true` **Required** |
-| `widgetId` | `string` | Unique widgetId for each widget. Contact business team to get your uniqueId **Required** |
+| `isWidget` | `string` | `true` **(Required)** |
+| `widgetId` | `string` | Unique widgetId for each widget. Contact business team to get your uniqueId **(Required)** |
 | `fromChain` | `string` | ChainId of source chain which needs to be shown as default souce chain; if not provided default souce chain will be chosen as the chain to which user's wallet is connected. In case wallet is not connected Polygon is shown as default source chain |
 | `toChain` | `string` | ChainId of destination chain which needs to be shown as default destination chain. If not provided, BSC is shown as default chain |
 | `fromToken` | `string` | Address of source token which needs to be shown as selected token on source chain. If not provided, USDT will be shown as default source token |
