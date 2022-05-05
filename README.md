@@ -8,12 +8,34 @@ Below is how you can integrate Router widget in your website.
 
 ## Usage/Examples
 Router Widget will be integrated as `iframe`. An example of the same is given below - 
+```javascript
+  const baseUrl = "https://app.routerprotocol.com/swap";
+
+  const configuration = {
+    isWidget: true,
+    widgetId: "widget - 0101",
+    fromChain: "56",
+    toChain: "137",
+    fromToken: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+    toToken: "0x16ECCfDbb4eE1A85A33f3A9B21175Cd7Ae753dB4",
+    dstChains: "137,56",
+    dstTokens:
+      "0x6855f7bb6287F94ddcC8915E37e73a3c9fEe5CF3,0x980111ae1B84E50222C8843e3A7a038F36Fecd2b",
+    ctaColor: "red",
+    textColor: "black",
+    backgroundColor: "#3fb043",
+  };
+
+  const paramString = new URLSearchParams(configuration).toString();
+  document.getElementById("widget__iframe").src = `${baseUrl}?${paramString}`;
+```
 ```html
-  <iframe height="610px" width="420px" 
+  <iframe id="widget__iframe" height="610px" width="420px" 
   src="https://app.routerprotocol.com/swap?isWidget=true&widgetId=widget-0101&fromChain=56&toChain=137&fromToken=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&toToken=0x16ECCfDbb4eE1A85A33f3A9B21175Cd7Ae753dB4"
   style="border: none;border-radius: 11px;box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.05);">
   </iframe>
 ```
+Generate the `paramString` like given in the above example and attach it in the `src` of the `iframe`.
 
 There are multiple parameters which can be provided to customize the widget. Partners can choose the default chains which needs to be shown on the widget along with the default tokens on both source and destination chains.
 
@@ -27,6 +49,9 @@ Customizable parameters need to be inserted as `query params` in `url` -
 | `toChain` | `string` | ChainId of destination chain which needs to be shown as default destination chain. If not provided, BSC is shown as default chain |
 | `fromToken` | `string` | Address of source token which needs to be shown as selected token on source chain. If not provided, USDT will be shown as default source token |
 | `toToken` | `string` | Address of destination token which needs to be shown as selected token on destination chain. If not provided, USDT will be shown as default destination token |
+| `ctaColor` | `string` | Color of call to action buttons |
+| `textColor` | `string` | Color of all the text in the widget |
+| `backgroundColor` | `string` | Background theme color of the widget |
 
 There could be use cases where our partners might want to only show a selected list of chains for their users. We have also provided our partners with that capability; capability to restrict chains/tokens to be shown on the widget. 
 
