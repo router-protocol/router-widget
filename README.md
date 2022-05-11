@@ -24,6 +24,7 @@ Router Widget will be integrated as `iframe`. An example of the same is given be
     ctaColor: "red",
     textColor: "black",
     backgroundColor: "#3fb043",
+    logoURI: "ipfs://QmaznB5PRhMC696u8yZuzN6Uwrnp7Zmfa5CydVUMvLJc9i/aDAI.svg",
   };
 
   const paramString = new URLSearchParams(configuration).toString();
@@ -52,6 +53,7 @@ Customizable parameters need to be inserted as `query params` in `url` -
 | `ctaColor` | `string` | Color of call to action buttons |
 | `textColor` | `string` | Color of all the text in the widget |
 | `backgroundColor` | `string` | Background theme color of the widget |
+| `logoURI` | `string` | Circular logo url, if not given original router logo will be shown |
 
 There could be use cases where our partners might want to only show a selected list of chains for their users. We have also provided our partners with that capability; capability to restrict chains/tokens to be shown on the widget. 
 
