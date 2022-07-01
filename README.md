@@ -13,7 +13,7 @@ Router Widget will be integrated as `iframe`. An example of the same is given be
 
   const configuration = {
     isWidget: true,
-    widgetId: "widget - 0101",
+    widgetId: "24",
     fromChain: "56",
     toChain: "137",
     fromToken: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
