@@ -9,7 +9,7 @@ Below is how you can integrate Router widget in your website.
 ## Usage/Examples
 Router Widget will be integrated as `iframe`. An example of the same is given below - 
 ```javascript
-  const baseUrl = "https://app.routerprotocol.com/swap";
+  const baseUrl = "https://app.thevoyager.io/swap";
 
   const configuration = {
     isWidget: true,
