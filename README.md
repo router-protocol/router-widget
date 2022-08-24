@@ -21,8 +21,8 @@ Router Widget will be integrated as `iframe`. An example of the same is given be
     dstChains: "137,56",
     dstTokens:
       "0x6855f7bb6287F94ddcC8915E37e73a3c9fEe5CF3,0x980111ae1B84E50222C8843e3A7a038F36Fecd2b",
-    ctaColor: "red",
-    textColor: "black",
+    ctaColor: "#E8425A",
+    textColor: "#1A1B1C",
     backgroundColor: "#3fb043",
     logoURI: "ipfs://QmaznB5PRhMC696u8yZuzN6Uwrnp7Zmfa5CydVUMvLJc9i/aDAI.svg",
   };
