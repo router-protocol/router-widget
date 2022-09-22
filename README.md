@@ -73,6 +73,7 @@ Restriction parameters are optional and can be used with the above customizable 
 | `dstChains` | `string` | List of chainId's of destination chains seperated by comma that needs to be shown in selection menu. |
 | `srcTokens` | `string` | List of addresses of source tokens belonging to list of `srcChains` seperated by comma that needs to be shown in selection menu.|
 | `dstTokens` | `string` | List of addresses of destination tokens belonging to list of `dstChains` seperated by comma that needs to be shown in selection menu.|
+| `feeTokens` | `string` | List of addresses of fee tokens belonging to list of `srcChains` seperated by comma that needs to be shown in Fee selection menu. Only these fee Token will be availbale for the users to select on the widget |
 
 Note - 
 1. `height` and `width` are customizable but we recommend to keep the aspect ratio same.
